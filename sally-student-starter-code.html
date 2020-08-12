@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Here you can find Sally contact information">
+    <title>Sally contact</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id='application-root'>
+
+    </div>
+
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+    const name = "Sally"
+    function App(props) {
+        console.log(props)
+        return (
+        <div>
+            {props.children}
+        </div>
+        );
+    }
+    
+    ReactDOM.render(
+        <App className='resume-class'>
+            <div>
+                <header>
+                    <section id="contact-information">
+                        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="sally-in-yellow-sweater-arms-crossed"></img>
+                        <h1>My name is {name}</h1>
+                        <p>My contact information: </p>
+                        <address>
+                            <p>My email is: <a href="mailto://sally@IntenetExplorer.old">sally@IntenetExplorer.old</a></p>
+                            <p>My phone number is: <a href="tel:+34100572415">+34 100 57 24 15</a></p>
+                        </address>
+                    </section>
+
+                </header>
+                <main>
+                    <section id="Education">
+                        <h2>My Education:</h2>
+                        <p>I have studied at:</p>
+                        <ul>
+                            <li>IES BEZMILIANA</li>
+                            <li>Minnesota University</li>
+                        </ul>
+                    </section>
+                    <section id="works">
+                        <h2>My Employment:</h2>
+                        <p>I have worked at:</p>
+                        <div id="works_list">
+                            <ul>
+                                <li>Github as Engineer during 2018 and there I have to
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </li>
+                                <li>Jetbrains as Project manager during 2019 and I'm still working there. My work consist in
+                                    A assumenda autem dolorem doloremque
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                </main>
+        </div>    
+        </App>,
+        document.querySelector('#application-root')
+    );
+    </script>
+
+</body>
+</html>
